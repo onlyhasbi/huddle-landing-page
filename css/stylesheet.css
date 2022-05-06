@@ -42,7 +42,6 @@ p {
 img {
   width: 100%;
   max-width: 100%;
-  height: auto;
 }
 
 *,
@@ -132,7 +131,7 @@ a {
   color: var(--Light-Red);
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .input__info {
     position: relative;
     top: -2.75rem;
@@ -168,16 +167,16 @@ a {
 
 @media screen and (min-width: 1024px) {
   .navbar {
-    padding: 7.9rem 0;
+    padding: 7.3rem 0;
   }
 
   .nav__image {
-    max-width: 23.9rem;
+    max-width: 22.25rem;
   }
 
   .nav__button {
     font-size: 1.6rem;
-    padding: 1.6rem 3rem;
+    padding: 1.25rem 2.85rem;
   }
 }
 
@@ -210,38 +209,41 @@ a {
 @media screen and (min-width: 1024px) {
   .hero-content {
     max-width: initial;
-    padding-top: 16.6rem;
-    padding-bottom: 11rem;
+    padding-top: 15.9rem;
+    padding-bottom: 10.3rem;
   }
 
   .hero__title {
-    font-size: 4.75rem;
+    font-size: 4.46rem;
   }
 
   .hero__text {
-    font-size: 2rem;
-    max-width: 59.3rem;
+    font-size: 1.85rem;
+    max-width: 56rem;
     margin: 0 auto;
-    margin-top: 3rem;
-    margin-bottom: 4.95rem;
+    margin-top: 2.8rem;
+    margin-bottom: 3.9rem;
   }
 
   .hero__button {
-    padding: 3.15rem 10rem;
-    font-size: 2rem;
+    padding: 3.07rem 9.37rem;
+    font-size: 1.9rem;
   }
 }
 
 /* Hero Image */
 
-.hero__image {
+.hero-image {
   width: 100%;
   max-width: 29.67rem;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 1024px) {
-  .hero__image {
-    max-width: 101.6rem;
+  .hero-image {
+    width: 100%;
+    max-width: 96.91rem;
+    margin: 0 auto;
   }
 }
 
@@ -290,10 +292,12 @@ a {
 
 @media screen and (min-width: 1024px) {
   .hero-counter {
+    padding-top: 11.1rem;
+    padding-bottom: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 87.43rem;
+    max-width: 82.3rem;
   }
 
   .counter__item + .counter__item {
@@ -302,26 +306,27 @@ a {
 
   .counter__heading,
   .counter__item:last-of-type .counter__heading {
-    font-size: 9.6rem;
+    font-size: 8.95rem;
+    font-family: "Open Sans", sans-serif;
   }
 
   .counter__icon .group {
-    width: 4.56rem;
-    height: 4.26rem;
+    width: 4.4rem;
+    height: 4rem;
   }
 
   .counter__icon .messages {
-    width: 4rem;
-    height: 3.48rem;
+    width: 3.7rem;
+    height: 3.6rem;
   }
 
   .counter__heading {
-    margin-top: 3rem;
-    margin-bottom: 4.65rem;
+    margin-top: 0.75rem;
+    margin-bottom: 4rem;
   }
 
   .counter__text {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -464,8 +469,8 @@ a {
   }
 
   .feature__item .feature__image {
-    max-width: 51.8rem;
-    padding-top: 6.6rem;
+    max-width: 48.6rem;
+    padding-top: 5.8rem;
     padding-bottom: 5rem;
   }
 
@@ -476,72 +481,72 @@ a {
   }
 
   .feature__title {
-    font-size: 4rem;
+    font-size: 3.7rem;
     margin-bottom: 3rem;
   }
 
   .feature__text {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     padding-bottom: 0;
   }
 
   .grow {
     position: relative;
-    margin-top: 30.9rem;
+    margin-top: 29.1rem;
   }
 
   .grow::before {
     background: url("../images/bg-section-top-desktop-1.svg") round;
-    height: 17rem;
-    top: -17rem;
+    height: 15.95rem;
+    top: -15.5rem;
   }
 
   .grow::after {
     background: url("../images/bg-section-bottom-desktop-1.svg") round;
-    height: 14rem;
-    bottom: -14rem;
+    height: 12.8rem;
+    bottom: -12.5rem;
   }
 
   .flowing {
-    margin-top: 26rem;
+    margin-top: 25.4rem;
+  }
+
+  .flowing .feature__image,
+  .users .feature__image {
+    padding: 5rem 0;
   }
 
   .users {
-    margin-top: 20.54rem;
-  }
-
-  .users .feature__image {
-    padding-top: 3.3rem;
-    padding-bottom: 3.3rem;
+    margin-top: 19.1rem;
   }
 
   .users::before {
     background: url("../images/bg-section-top-desktop-2.svg") round;
-    height: 16.34rem;
-    top: -16rem;
+    height: 13.8rem;
+    top: -13.5rem;
   }
 
   .users::after {
     background: url("../images/bg-section-bottom-desktop-2.svg") round;
-    height: 15rem;
-    bottom: -15rem;
+    height: 12.8rem;
+    bottom: -12.5rem;
   }
 
   .cta {
-    margin-top: 31.7rem;
-    margin-bottom: 35.2rem;
+    margin-top: 28.6rem;
+    margin-bottom: 33rem;
   }
 
   .cta__heading {
-    font-size: 4rem;
-    margin-bottom: 4.3rem;
+    font-size: 3.7rem;
+    margin-bottom: 3.9rem;
     max-width: 100%;
   }
 
   .cta__button {
-    padding: 3.38rem 10.1rem;
-    font-size: 1.95rem;
+    padding: 3.2rem 9.38rem;
+    font-size: 1.9rem;
     font-weight: 700;
   }
 }
@@ -567,6 +572,11 @@ a {
   top: -4.5rem;
   left: 0;
   right: 0;
+}
+
+.logo__white {
+  width: 100%;
+  max-width: 22.87rem;
 }
 
 .news__title {
@@ -669,13 +679,13 @@ a {
   }
 
   .footer {
-    padding: 10.2rem 11.93rem;
+    padding: 11rem 11.93rem;
   }
 
   .footer::before {
     background: url("../images/bg-footer-top-desktop.svg") round;
-    height: 17.64rem;
-    top: -17.25rem;
+    height: 16.64rem;
+    top: -16.25rem;
   }
 
   .information {
