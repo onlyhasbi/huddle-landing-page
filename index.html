@@ -116,10 +116,12 @@
             To recieve tips on how to grow your community, sign up to our weekly newsletter. We'll never
             send you spam or pass on your email address
           </p>
-          <form class="news__form">
+          <form class="news__form validate__form" novalidate>
             <input type="email" class="input__email">
-            <button class="btn btn-sm btn-primary sm-rounded subscribe__button">Subscribe</button>
+            <button class="btn btn-sm btn-primary sm-rounded subscribe__button" type="submit">Subscribe</button>
+            <span class="input__info" id="info">Please check your email</span>
           </form>
+
         </div>
 
         <div class="contacts">
@@ -151,6 +153,7 @@
     </div>
   </footer>
 
+  <script src="./script/main.js"></script>
 </body>
 
 </html>

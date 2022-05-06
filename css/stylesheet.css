@@ -15,6 +15,10 @@
 }
 
 /* --- Defaul Setting ---- */
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   font-size: 62.5%;
@@ -47,6 +51,12 @@ img {
   box-sizing: border-box;
 }
 
+span,
+img,
+a {
+  display: block;
+}
+
 /* 'Poppins', sans-serif */
 /* 'Open Sans', sans-serif */
 
@@ -72,6 +82,11 @@ img {
   color: #fff;
 }
 
+.btn-primary:hover {
+  background: var(--Light-Pink);
+  cursor: pointer;
+}
+
 .btn-outline {
   border: 1px solid var(--Pink);
   color: var(--Pink);
@@ -95,6 +110,36 @@ img {
   border-radius: 0.25rem;
 }
 
+/* --- Email Notification --- */
+
+.invalidated:invalid .input__email {
+  border: 1px solid var(--Light-Red);
+}
+
+.invalidated:invalid .input__info {
+  display: block;
+}
+
+.input__info {
+  display: none;
+  font-size: 1.3rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.input__info {
+  position: relative;
+  top: -5.75rem;
+  color: var(--Light-Red);
+}
+
+@media screen and (min-width:1024px) {
+  .input__info {
+    position: relative;
+    top: -2.75rem;
+    color: var(--Light-Red);
+  }
+}
+
 /* --- Header Section --- */
 
 /* Navbar */
@@ -113,6 +158,12 @@ img {
 .nav__button {
   font-size: 0.95rem;
   text-transform: capitalize;
+}
+
+.navbar .btn-outline:hover {
+  border-color: var(--Light-Pink);
+  color: var(--Light-Pink);
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {
@@ -544,6 +595,7 @@ img {
   font-size: 1.45rem;
   font-family: "Open Sans", sans-serif;
   color: var(--Very-Dark-Cyan);
+  border-radius: 0.5rem;
 }
 
 .subscribe__button {
@@ -552,7 +604,7 @@ img {
   padding: 1.75rem 4.2rem;
   font-size: 1.6rem;
   font-weight: 700;
-  border-radius: 0.75rem;
+  border-radius: 0.5rem;
 }
 
 .contacts {
@@ -606,6 +658,11 @@ img {
   color: #fff;
 }
 
+.social-media__item i:hover {
+  color: #01c7f6;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 1024px) {
   .footer .container {
     max-width: 100%;
@@ -636,7 +693,8 @@ img {
 
   .news__form {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
     gap: 4rem;
   }
 
@@ -660,9 +718,9 @@ img {
   }
 
   .input__email {
+    width: 61%;
     padding: 1.75rem 1.5rem;
     margin-bottom: 0;
-    border-radius: 0.75rem;
   }
 
   .subscribe__button {
